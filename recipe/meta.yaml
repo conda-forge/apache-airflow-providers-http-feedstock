@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.6
     - apache-airflow >=2.1.0
-    - requests >=2.20.0
+    - requests >=2.26.0
 
 test:
   imports:
