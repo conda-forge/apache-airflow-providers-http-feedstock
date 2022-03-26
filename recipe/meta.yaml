@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-http" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-http-{{ version }}.tar.gz
-  sha256: d40c8f03ffd9e7be63d292528df49a0719b5f68e737da0f816286571c55dac2a
+  sha256: 5f04226bcd5627037d3e903dcb0c0b744cedc903f68d7eeda25c37e8d6d26f36
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -21,7 +21,6 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - apache-airflow >=2.1.0
     - requests >=2.26.0
 
 test:
@@ -35,10 +34,10 @@ test:
 
 about:
   home: https://airflow.apache.org/
-  summary: Provider for Hypertext Transfer Protocol (HTTP) for Apache Airflow
+  summary: Provider for Apache Airflow. Implements apache-airflow-providers-http package
   license: Apache-2.0
-  license_family: Apache
   license_file: LICENSE
+  license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-http/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
