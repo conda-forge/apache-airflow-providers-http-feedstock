@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-http" %}
-{% set version = "4.5.1" %}
+{% set version = "4.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-http-{{ version }}.tar.gz
-  sha256: ec90920ff980fc264af9811dc72c37ef272bcdb3d007c7114e12366559426460
+  sha256: 73a1107ce1350a68c6fcec8aa4b5bd5a837e71f63fc2bce4210183e53bb24f17
 
 build:
   noarch: python
