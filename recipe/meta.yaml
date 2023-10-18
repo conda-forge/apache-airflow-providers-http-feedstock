@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.8
     - aiohttp
-    - apache-airflow >=2.4.0
+    - apache-airflow >=2.5.0
     - asgiref
     - requests >=2.26.0
     - requests-toolbelt
