@@ -3,11 +3,11 @@ About apache-airflow-providers-http-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apache-airflow-providers-http-feedstock/blob/main/LICENSE.txt)
 
-Home: https://airflow.apache.org/
+Home: https://github.com/apache/airflow/
 
 Package license: Apache-2.0
 
-Summary: Provider for Apache Airflow. Implements apache-airflow-providers-http package
+Summary: Provider package apache-airflow-providers-http for Apache Airflow
 
 Development: https://github.com/apache/airflow/
 
