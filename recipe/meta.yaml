@@ -27,6 +27,9 @@ requirements:
     - requests >=2.26.0
     - requests-toolbelt
 
+    # temporary constraint to prevent incompatibilities in testing
+    - pendulum <3.0
+
 test:
   imports:
     - airflow.providers.http
