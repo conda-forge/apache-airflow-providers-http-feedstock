@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-http" %}
-{% set version = "4.13.2" %}
+{% set version = "4.13.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_http-{{ version }}.tar.gz
-  sha256: 75b34ac8c342fc67584580e5356180e581ff52ed961ff055786cfc2cbd0a0029
+  sha256: 41d71adf40dcaa2481b721c27c5a43be2d4315475c41280c96c4c8846424de22
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.9,<4.dev0
-    - aiohttp >=3.9.2
+    - aiohttp >=3.9.2,<3.11.0
     - apache-airflow >=2.8.0
     - asgiref >=2.3.0
     - requests >=2.27.0,<3
