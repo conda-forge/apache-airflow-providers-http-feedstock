@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-http" %}
-{% set version = "5.4.0" %}
+{% set version = "5.5.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_http-{{ version }}.tar.gz
-  sha256: 222ec709cce8eaf66d60a098a9f81b1cf5f995cfa074d5a71b679bb97fe308d1
+  sha256: 2267871cd3a44f4c9f306dc59c07ebd9a7fcd0d722d5a570c1401b08dfe6c73c
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
+    - apache-airflow-providers-common-compat >=1.8.0
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
     - requests >=2.32.0,<3
