@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-http
-  version: "5.6.2"
+  version: 5.6.3
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_http-${{ version }}.tar.gz
-  sha256: 0978295a2fade7386a2cda80d524f74366a3faf36530aa08665250de650b2f24
+  sha256: 95c805cdcc500828f4f202bd6d6e32153c45d4b4bfa2a3f58ad2f68413aac0e3
 
 build:
   noarch: python
@@ -23,16 +23,15 @@ requirements:
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
-    - apache-airflow-providers-common-compat >=1.10.1
+    - apache-airflow-providers-common-compat >=1.12.0
     - requests >=2.32.0,<3
     - requests-toolbelt >=1.0.0
     - aiohttp >=3.12.14
     - asgiref >=2.3.0
-
 tests:
   - python:
       imports:
-      - airflow.providers.http
+        - airflow.providers.http
       pip_check: true
       python_version: ${{ python_min }}.*
 
