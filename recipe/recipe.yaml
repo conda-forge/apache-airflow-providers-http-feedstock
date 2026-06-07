@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-http
-  version: "6.0.2"
+  version: "6.0.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_http-${{ version }}.tar.gz
-  sha256: 5363fdd504cf47664da4af92ae180c5d17d4dd501bcaad99a173800f09c93cff
+  sha256: 036068861e670fcefdd44dd63deb80687761e5d533e5dd10fa4dc0324cd4f3cf
 
 build:
   noarch: python
