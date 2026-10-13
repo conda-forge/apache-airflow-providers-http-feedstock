@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-http
-  version: 6.2.0
+  version: "6.3.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_http-${{ version }}.tar.gz
-  sha256: 45e8ee017691640ff34d550c7b7b210a203d5de22dde809f15540eaec8d030f5
+  sha256: 9139da91dadcf2d1f7714c9a848893a74806d99f87c6c02cd67e4abdb5fd007e
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit-core ==4.0.2
+    - flit-core ==4.1.0
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
